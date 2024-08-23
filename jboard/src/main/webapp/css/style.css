@@ -214,7 +214,7 @@ main {
     float: right;
 }
 
-.register > form .auth{
+.register > form .auth {
 	display: none;
 	margin-top: 4px;
 }
@@ -359,6 +359,10 @@ main {
 }
 .view > .commentList > article > div {
     text-align: right;
+}
+
+.view > .commentList > article .commentCancel {
+	display: none;
 }
 
 .view > .commentList > .empty {
