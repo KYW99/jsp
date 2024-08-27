@@ -1,0 +1,267 @@
+ * {
+            margin: 0;
+            padding: 0;
+            font: normal 12px 'Inter';
+        }
+
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: #111;}
+        input, textarea {outline: none;}
+
+
+        /************************ Header ************************/
+        header{
+            position: relative;
+            width: 980px;
+            height: 60px;
+            left: 470px;
+            top: 0px;
+            background: url(/farm/img/admin/admin_bg.jpg);
+        }
+
+        header > a {
+            position: absolute;
+            width: 170px;
+            height: 32px;
+            left: 12px;
+            top: 12px;
+            background: url(/farm/img/admin/admin_logo.jpg);
+        }
+
+        header > span {
+            width: 149px;
+            height: 14px;
+            position: absolute;
+            top: 13px;
+            left: 819px;
+            font-size: 11px; /*원래는 12로 변경해야 함*/
+            color: white;
+            line-height: 14px;
+        }
+
+   
+        /************************ Main ************************/
+        main{
+            position: absolute;
+            width: 980px;
+            height: 644px;
+            left: 470px;
+            top: 60px;
+        }
+
+        /************************ Aside ************************/
+        aside{
+            position: absolute;
+            width: 176px;
+            height: 400px;
+            left: 0px;
+            top: 0px;
+        }
+
+        .main_function {
+            width: 156px;
+            height: 30px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border: 1px solid #CCCCCC;
+            border-radius: 20px;
+            background: #E5E5E5;
+        }
+
+        aside > h3 > p {
+            width: 56px;
+            height: 15px;
+            position: absolute;
+            top: 7px;
+            left: 21px;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 17px;
+        }
+
+        .aside-list {
+            width: 156px;
+            height: 234px;
+            position: absolute;
+            top: 40px;
+            left: 10px;
+        }
+
+        .tit {
+            width: 48px;
+            height: 14px;
+            position: absolute;
+            top: 4px;
+        }
+
+        li:nth-child(1) {
+            width: 124px;
+            height: 72px;
+            position: absolute;
+            top: 26px;
+            left: 16px;
+        }
+        li:nth-child(2) {
+            width: 124px;
+            height: 50px;
+            position: absolute;
+            top: 108px;
+            left: 16px;
+        }
+        li:nth-child(3) {
+            width: 124px;
+            height: 50px;
+            position: absolute;
+            top: 168px;
+            left: 16px;
+        }
+
+        .contents {
+            width: 124px;
+            height: 22px;
+            position: absolute;
+            top: 28px;
+        }
+
+        .contents1 {
+            width: 124px;
+            height: 22px;
+            position: absolute;
+            top: 28px;
+        }
+
+        .contents2 {
+            width: 124px;
+            height: 22px;
+            position: absolute;
+            top: 50px;
+        }
+
+        li > p, li > a {
+            font-weight: bold;
+        }
+
+        /************************ section ************************/
+       section{
+            width: 804px;
+            height: 658px;
+            position: absolute;
+            left: 176px;
+        }
+
+        section > article {
+             width: 784px;
+             height: 193px;
+             position: relative;
+             top: 45px;
+             left: 10px;
+            } 
+
+        .product_list {
+            width: 68px;
+            height: 19px;
+            position: absolute;
+            top: 12px;
+            left: 10px;
+            font-size: 17px;
+            line-height: 21px;
+            font-weight: bold;
+            color: #3f3f3f;
+        }
+            
+        table {
+            width: 784px;
+            height: 133px;
+            border-top: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #fbfbfb;
+            height: 42.5px;
+        }
+
+        th:nth-child(1){width: 57.2px;}
+        th:nth-child(2){width: 129.89px;}
+        th:nth-child(3){width: 111.33px;}
+        th:nth-child(4){width: 115.97px;}
+        th:nth-child(5){width: 74.22px;}
+        th:nth-child(6){width: 97.41px;}
+        th:nth-child(7){width: 74.22px;}
+        th:nth-child(8){width: 123.77px;}
+
+        td {
+            height: 89px;
+            border-bottom: 1px dotted;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        td > data > img {
+            width: 60px;
+            height: 60px;
+        }
+
+        #container {
+            width: 784px;
+            height: 51px;
+            position: relative;
+        }
+        .reg {
+            width: 74px;
+            height: 31px;
+            position: absolute;
+            top: 10px;
+            left: 700px;
+            background-color: white;
+            border: 1px solid #cccccc;
+            border-radius: 20px;
+            display: flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .select_del{
+            width: 100%;
+            height: 37px;
+            line-height: 37px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        
+        .page_box{
+            width: 100%;
+            height: 35px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .page_box span {
+            font-weight: bold;
+        }
+        .page_box .underline{
+            border-bottom: 1px solid #111;
+        }
+        .page_box::before{content: "<";}
+        .page_box::after{content: ">";}
+          
+        /************************ Footer ************************/
+        footer{
+            position: absolute;
+            width: 980px;
+            height: 39px;
+            left: 470px;
+            right: 470px;
+            top: 704px;
+
+            background: #353535;
+        }
+
+        .copyright{
+            float: left;
+            margin-top: 8px;
+            color: white;
+            font-size: 15px;
+            
+        }
+          
