@@ -1,0 +1,184 @@
+* {
+            margin: 0;
+            padding: 0;
+            font: normal 12px 'Inter';
+            font-weight: bold;
+        }
+
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: #111;}
+        input, textarea {outline: none;}
+
+        #wrapper {
+            width : 100%;
+            height : 743px;
+            margin : 0 auto;
+        }
+
+        /************************ Main ************************/
+        main{
+            position: absolute;
+            width: 980px;
+            height: 644px;
+            left: 470px;
+            top: 60px;
+        }
+
+        /************************ Aside ************************/
+        aside{
+            position: absolute;
+            width: 176px;
+            height: 400px;
+            left: 0px;
+            top: 0px;
+        }
+
+        .main_function {
+            width: 156px;
+            height: 30px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border: 1px solid #CCCCCC;
+            border-radius: 20px;
+            background: #E5E5E5;
+        }
+
+        aside > h3 > p {
+            width: 56px;
+            height: 15px;
+            position: absolute;
+            top: 7px;
+            left: 21px;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 17px;
+        }
+
+        .aside-list {
+            width: 156px;
+            height: 234px;
+            position: absolute;
+            top: 40px;
+            left: 10px;
+        }
+
+        .tit {
+            width: 48px;
+            height: 14px;
+            position: absolute;
+            top: 4px;
+        }
+
+        li:nth-child(1) {
+            width: 124px;
+            height: 72px;
+            position: absolute;
+            top: 26px;
+            left: 16px;
+        }
+        li:nth-child(2) {
+            width: 124px;
+            height: 50px;
+            position: absolute;
+            top: 108px;
+            left: 16px;
+        }
+        li:nth-child(3) {
+            width: 124px;
+            height: 50px;
+            position: absolute;
+            top: 168px;
+            left: 16px;
+        }
+
+        .contents {
+            width: 124px;
+            height: 22px;
+            position: absolute;
+            top: 28px;
+        }
+
+        .contents1 {
+            width: 124px;
+            height: 22px;
+            position: absolute;
+            top: 28px;
+        }
+
+        .contents2 {
+            width: 124px;
+            height: 22px;
+            position: absolute;
+            top: 50px;
+        }
+
+        li > p, li > a {
+            font-weight: bold;
+        }
+
+        /************************ section ************************/
+        section{
+            width: 804px;
+            height: 400px;
+            position: absolute;
+            left: 176px;
+        }
+
+        section > article {
+            width: 784px;
+            height: 158px;
+            position: relative;
+        }
+
+        .order_list {
+            width: 68px;
+            height: 50px;
+            font-size: 17px;
+            line-height: 50px;
+            font-weight: bold;
+            color: #3f3f3f;
+        }
+
+
+        table {
+            width : 784px;
+            height: 86px;
+            border-top: 2px solid #333333;
+            border-bottom : 1px dashed lightgray;
+            box-sizing: border-box;
+            text-align: center;
+            border-collapse: collapse;
+        }
+      
+      
+        th {
+            padding: 12px 8px;
+            background-color: #FBFBFB;
+        }
+        td {
+            padding: 12px 8px;
+        }
+        input[type="checkbox"] {
+            margin: 0;
+        }
+
+        #seldel{
+            display: block;
+            height: 30px;
+            line-height: 30px;
+        }
+        .page_box{
+            width: 100%;
+            height: 35px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .page_box span {
+            font-weight: bold;
+        }
+        .page_box .underline{
+            border-bottom: 1px solid #111;
+        }
+        .page_box::before{content: "<";}
+        .page_box::after{content: ">";}

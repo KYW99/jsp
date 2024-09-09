@@ -1,15 +1,15 @@
 package com.farm.dto;
 
 public class PageGroupDto {
-
 	private int start;
 	private int end;
+	
 	
 	public PageGroupDto(int start, int end) {
 		this.start = start;
 		this.end = end;
 	}
-	
+	public PageGroupDto() {}
 	public int getStart() {
 		return start;
 	}
@@ -24,9 +24,8 @@ public class PageGroupDto {
 	}
 	@Override
 	public String toString() {
-		return "PageGroupDto [start=" + start + ", end=" + end + "]";
+		return "PageGroupDtop [start=" + start + ", end=" + end + "]";
 	}
-	
 	
 	
 }

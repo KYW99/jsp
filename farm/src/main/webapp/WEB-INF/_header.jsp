@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <link rel="stylesheet" href="/farm/css/_header.css">
 <header>
         <div>
@@ -6,8 +7,19 @@
             <div class="top">
                 <p>
                     <a href="/farm/">HOME | </a>
-                    <a href="#">로그인 | </a>
-                    <a href="#"> 회원가입 | </a>
+                    
+						<c:if test="${sessUser.uid != null}">
+							<a href="/farm/user/logout.do" class="logout" >로그아웃 | </a>
+						</c:if>
+						<c:if test="${sessUser.uid == null}">
+							<a href="/farm/user/login.do">로그인 | </a>
+						</c:if>
+						<c:if test="${sessUser.uid != null}">
+							<a href="/farm/user/modify.do?uid=${sessUser.uid}" class="logout" >나의정보 | </a>
+						</c:if>
+						<c:if test="${sessUser.uid == null}">
+							<a href="/farm/user/register.do"> 회원가입 | </a>
+						</c:if>
                     <a href="/farm/admin/index.do"> 관리자 | </a>
                     <a href="/farm/community/qna.do"> 고객센터 </a>
                 </p>

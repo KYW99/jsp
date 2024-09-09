@@ -14,53 +14,68 @@ function updatePoints() {
 
 // 폼 유효성 검사
 function validateForm() {
-    const proname = document.getElementById('proname').value.trim();
-    const category = document.getElementById('category').value;
-    const price = document.getElementById('price').value.trim();
-    const stock = document.getElementById('stock').value.trim();
-    const productImageList = document.getElementById('product_image_list').files.length;
-    const productImageInfo = document.getElementById('product_image_info').files.length;
-    const productImageDesc = document.getElementById('product_image_desc').files.length;
-
-    if (proname === "") {
-        alert("상품명을 입력하세요.");
+    // 상품명 유효성 검사
+    var proname = document.getElementById("proname").value;
+    if (proname.trim() === "") {
+        alert("상품명을 입력해주세요.");
+        document.getElementById("proname").focus();
         return false;
     }
 
-    if (!reProductName.test(proname)) {
-        alert("상품명을 입력해주세요");
-        return false;
-    }
-
+    // 종류 유효성 검사
+    var category = document.getElementById("category").value;
     if (category === "") {
-        alert("종류를 선택해 주세요.");
+        alert("상품 종류를 선택해주세요.");
+        document.getElementById("category").focus();
         return false;
     }
 
-    if (price === "" || !rePrice.test(price)) {
-        alert("가격을 입력해 주세요.");
+    // 가격 유효성 검사
+    var price = document.getElementById("price").value;
+    if (price.trim() === "" || isNaN(price) || Number(price) <= 0) {
+        alert("유효한 가격을 입력해주세요.");
+        document.getElementById("price").focus();
         return false;
     }
 
-    if (stock === "" || !reStock.test(stock)) {
-        alert("재고를 입력해 주세요.");
+    // 재고 유효성 검사
+    var stock = document.getElementById("stock").value;
+    if (stock.trim() === "" || isNaN(stock) || Number(stock) < 0) {
+        alert("유효한 재고 수량을 입력해주세요.");
+        document.getElementById("stock").focus();
         return false;
     }
 
-    if (productImageList === 0) {
-        alert("상품목록 이미지를 업로드해 주세요.");
-        return false;
-    }
-    if (productImageInfo === 0) {
-        alert("기본정보 이미지를 업로드해 주세요.");
-        return false;
-    }
-    if (productImageDesc === 0) {
-        alert("상품설명 이미지를 업로드해 주세요.");
+    // 배송비 유효성 검사
+    var deliveryCostChecked = document.querySelector('input[name="delivery_cost"]:checked');
+    if (!deliveryCostChecked) {
+        alert("배송비를 선택해주세요.");
         return false;
     }
 
-    return true; // 폼 제출 허용
+    // 상품 이미지 유효성 검사
+    var productImageList = document.querySelector('input[name="product_image_list"]').value;
+    if (productImageList === "") {
+        alert("상품 목록 이미지를 선택해주세요.");
+        return false;
+    }
+
+    var productImageInfo = document.querySelector('input[name="product_image_info"]').value;
+    if (productImageInfo === "") {
+        alert("기본 정보 이미지를 선택해주세요.");
+        return false;
+    }
+
+    var productImageDesc = document.querySelector('input[name="product_image_desc"]').value;
+    if (productImageDesc === "") {
+        alert("상품 설명 이미지를 선택해주세요.");
+        return false;
+    }
+
+    // 기타 유효성 검사 추가 가능
+
+    // 모든 검사를 통과한 경우 폼 제출
+    return true;
 }
 
 // 페이지 로드 시 이벤트 핸들러 추가

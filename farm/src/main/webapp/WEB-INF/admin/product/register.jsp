@@ -311,8 +311,8 @@
         <ul class="aside-list">
             <li>
                 <p class="tit">상품관리</p>
-                <a href="#" class="contents1">┗ 상품목록</a><br>
-                <a href="#" class="contents2">┗ 상품등록</a>
+                <a href="/farm/admin/product/list.do" class="contents1">┗ 상품목록</a><br>
+                <a href="/farm/admin/product/register.do" class="contents2">┗ 상품등록</a>
             </li>
             <li>
                 <p class="tit">주문관리</p>
@@ -361,6 +361,7 @@
                             <td>
                                 <select name="discount" id="discount">
                                     <option value="">선택</option>
+                                    <option value="0%">0%</option>
                                     <option value="5%">5%</option>
                                     <option value="10%">10%</option>
                                 </select>

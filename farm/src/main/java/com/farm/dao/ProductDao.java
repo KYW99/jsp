@@ -11,6 +11,7 @@ import com.farm.dto.ProductDto;
 import com.farm.util.DBHelper;
 import com.farm.util.SQL;
 
+
 public class ProductDao extends DBHelper{
 	
 	private static ProductDao instance = new ProductDao();
@@ -58,37 +59,37 @@ public class ProductDao extends DBHelper{
     }
 	
 	public int selectCountTotal() {
-		int total = 0;
-		try {
-			conn = getConnection();
-			stmt = conn.createStatement();
-			rs = stmt.executeQuery(SQL.SELECT_COUNT_TOTAL);
-			if(rs.next()) {
-				total = rs.getInt(1);
-			}
-		} catch (Exception e) {
-			logger.error(e.getMessage());
-		}finally {
-			closeAll();
-		}
-		return total;
+	    int total = 0;
+	    try {
+	        conn = getConnection();
+	        stmt = conn.createStatement();
+	        rs = stmt.executeQuery(SQL.SELECT_COUNT_TOTAL_PRO);
+	        if (rs.next()) {
+	            total = rs.getInt(1);
+	        }
+	    } catch (Exception e) {
+	        logger.error(e.getMessage());
+	    } finally {
+	        closeAll();
+	    }
+	    return total;
 	}
 	
-	public ProductDto selectProduct(int product_id) {
+	public ProductDto selectProduct(String prodid) {
 		ProductDto dto = null;
 		List<FileDto> files = new ArrayList<FileDto>();
 		
 		try {
 			conn = getConnection();
 			psmt = conn.prepareStatement(SQL.SELECT_PRODUCT);
-			psmt.setInt(1, product_id);
+			psmt.setString(1, prodid);
 			rs = psmt.executeQuery();
 			
 			while(rs.next()) {
 				if(dto == null) {
 					dto = new ProductDto();
 						dto.setProname(rs.getString(1));
-					 	dto.setProduct_id(rs.getInt(2));
+					 	dto.setProdid(rs.getInt(2));
 					 	dto.setCategory(rs.getString(3));
 			            dto.setPrice(rs.getInt(4));
 			            dto.setPoints(rs.getInt(5));
@@ -104,7 +105,7 @@ public class ProductDao extends DBHelper{
 				
 				FileDto fileDto = new FileDto();
 				fileDto.setFno(rs.getInt(14));
-				fileDto.setProduct_id(rs.getInt(15));
+				fileDto.setProdid(rs.getInt(15));
 				fileDto.setoName(rs.getString(16));
 				fileDto.setsName(rs.getString(17));
 				fileDto.setRdate(rs.getString(18));
@@ -121,6 +122,7 @@ public class ProductDao extends DBHelper{
 	}
 	
 	public List<ProductDto> selectProducts(int start) {
+		
 	    List<ProductDto> products = new ArrayList<>();
 	    try {
 	        conn = getConnection();
@@ -129,13 +131,10 @@ public class ProductDao extends DBHelper{
 	        
 	        rs = psmt.executeQuery();
 	        
-	        logger.info("Executing query: {}", SQL.SELECT_PRODUCTS);
-        
-	        
 	        while(rs.next()) {
 	            ProductDto dto = new ProductDto();
 	            dto.setProname(rs.getString(1));
-	            dto.setProduct_id(rs.getInt(2));
+	            dto.setProdid(rs.getInt(2));
 	            dto.setCategory(rs.getString(3));
 	            dto.setPrice(rs.getInt(4));
 	            dto.setPoints(rs.getInt(5));
@@ -147,11 +146,10 @@ public class ProductDao extends DBHelper{
 	            dto.setPro_img_desc(rs.getString(11));
 	            dto.setEtc(rs.getString(12));
 	            dto.setRdate(rs.getString(13));
-	            dto.setProduct_id(rs.getInt(14));
 	            products.add(dto);
 	            
 	        }
-	        logger.info("Number of products retrieved: {}", products.size());
+	        
 	    } catch (Exception e) {
 	        logger.error(e.getMessage());
 	    } finally {
@@ -159,13 +157,82 @@ public class ProductDao extends DBHelper{
 	    }
 	    return products;
 	}
-
+	
+	public List<ProductDto> selectProducts2() {
+		
+	    List<ProductDto> products = new ArrayList<>();
+	    
+	    try {
+	        conn = getConnection();
+	        psmt = conn.prepareStatement(SQL.SELECT_PRODUCTS2);
+	        
+	        rs = psmt.executeQuery();
+	        
+	        logger.debug("productDao rs : "+ rs);
+	        
+	        while(rs.next()) {
+	            ProductDto dto = new ProductDto();
+	            dto.setProname(rs.getString(1));
+	            dto.setProdid(rs.getInt(2));
+	            dto.setCategory(rs.getString(3));
+	            dto.setPrice(rs.getInt(4));
+	            dto.setPoints(rs.getInt(5));
+	            dto.setDiscount(rs.getString(6));
+	            dto.setDelivery_cost(rs.getString(7));
+	            dto.setStock(rs.getInt(8));
+	            dto.setPro_img_list(rs.getString(9));
+	            dto.setPro_img_inf(rs.getString(10));
+	            dto.setPro_img_desc(rs.getString(11));
+	            dto.setEtc(rs.getString(12));
+	            dto.setRdate(rs.getString(13));
+	            products.add(dto);
+	            
+	        }
+	        
+	    } catch (Exception e) {
+	        logger.error(e.getMessage());
+	    } finally {
+	        closeAll();
+	    }
+	    
+	    logger.debug("productDao : "+products.toString());
+	    return products;
+	}
 	public void updateProduct(ProductDto dto) {
 		
 	}
-	public void deleteProduct(String proname){
-		
+	   public void deleteFilesByProductId(int productId) {
+	        try {
+	            conn = getConnection();
+	            psmt = conn.prepareStatement(SQL.DELETE_FILE);
+	            psmt.setInt(1, productId);
+	            psmt.executeUpdate();
+	        } catch (Exception e) {
+	            logger.error(e.getMessage());
+	        } finally {
+	            closeAll();
+	        }
+	    }
+
+	    // 상품 삭제 시 파일 삭제를 포함한 메서드
+	    public void deleteProductWithFiles(int prodId) {
+	        deleteFilesByProductId(prodId); // 파일 삭제
+	        deleteProduct(prodId); // 상품 삭제
+	    }
+	
+	public void deleteProduct(int prodId) {
+	    try {
+	        conn = getConnection();
+	        psmt = conn.prepareStatement(SQL.DELETE_PRODUCT);
+	        psmt.setInt(1, prodId);
+	        psmt.executeUpdate();
+	    } catch (Exception e) {
+	        logger.error(e.getMessage());
+	    } finally {
+	        closeAll();
+	    }
 	}
+	
 	
 
 }

@@ -39,9 +39,10 @@
         }
         header .top > p{
             position: absolute;
-            width: 237.15px;
+            width: 250px;
      
         }
+        
                 
         /*logospace 는 로고, 사이드로고, 로그인| 담고있음*/
         .logospace {

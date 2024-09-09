@@ -8,37 +8,6 @@
         a {text-decoration: none; color: #111;}
         input, textarea {outline: none;}
 
-
-        /************************ Header ************************/
-        header{
-            position: relative;
-            width: 980px;
-            height: 60px;
-            left: 470px;
-            top: 0px;
-            background: url(/farm/img/admin/admin_bg.jpg);
-        }
-
-        header > a {
-            position: absolute;
-            width: 170px;
-            height: 32px;
-            left: 12px;
-            top: 12px;
-            background: url(/farm/img/admin/admin_logo.jpg);
-        }
-
-        header > span {
-            width: 149px;
-            height: 14px;
-            position: absolute;
-            top: 13px;
-            left: 819px;
-            font-size: 11px; /*원래는 12로 변경해야 함*/
-            color: white;
-            line-height: 14px;
-        }
-
    
         /************************ Main ************************/
         main{
@@ -244,24 +213,5 @@
         }
         .page_box::before{content: "<";}
         .page_box::after{content: ">";}
-          
-        /************************ Footer ************************/
-        footer{
-            position: absolute;
-            width: 980px;
-            height: 39px;
-            left: 470px;
-            right: 470px;
-            top: 704px;
-
-            background: #353535;
-        }
-
-        .copyright{
-            float: left;
-            margin-top: 8px;
-            color: white;
-            font-size: 15px;
-            
-        }
+ 
           

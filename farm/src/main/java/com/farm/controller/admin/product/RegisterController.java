@@ -41,10 +41,20 @@ public class RegisterController extends HttpServlet{
 		String discount = req.getParameter("discount");
 		String delivery_cost = req.getParameter("delivery_cost");
 		String stock = req.getParameter("stock");
-		String pro_img_list = req.getParameter("pro_img_list");
-		String pro_img_inf = req.getParameter("pro_img_inf");
-		String pro_img_desc = req.getParameter("pro_img_desc");
+		
+		List<FileDto> files = fileService.fileUpload(req);
+		String pro_img_list = files.isEmpty() ? "" : files.get(0).getsName();
+		String pro_img_inf = "";
+		String pro_img_desc = "";
 		String etc = req.getParameter("etc");
+		
+		 // 나머지 파일 처리 (inf, desc 등)
+	    if (files.size() > 1) {
+	        pro_img_inf = files.get(1).getsName();
+	    }
+	    if (files.size() > 2) {
+	        pro_img_desc = files.get(2).getsName();
+	    }
 		
 		
 		ProductDto productDto = new ProductDto();
@@ -63,12 +73,10 @@ public class RegisterController extends HttpServlet{
 		
 		int no = service.insertProduct(productDto);
 		
-		List<FileDto> files = fileService.fileUpload(req);
-		
 		System.out.println("files.toString()"+files.toString());
 		
 		for(FileDto fileDto : files) {
-			fileDto.setProduct_id(no);
+			fileDto.setProdid(no);
 			fileService.insertFile(fileDto);
 		}
 		

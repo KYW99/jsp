@@ -5,7 +5,7 @@ import java.util.List;
 public class ProductDto {
 
     private String proname;
-    private int product_id;
+    private int prodid;
     private String category;
     private int price;
     private int points;
@@ -18,6 +18,8 @@ public class ProductDto {
     private String etc;
     private String rdate;
 
+    
+    
     private List<FileDto> files;
     
     
@@ -39,12 +41,14 @@ public class ProductDto {
 		this.rdate = rdate;
 	}
 
-	public int getProduct_id() {
-		return product_id;
+
+
+	public int getProdid() {
+		return prodid;
 	}
 
-	public void setProduct_id(int product_id) {
-		this.product_id = product_id;
+	public void setProdid(int prodid) {
+		this.prodid = prodid;
 	}
 
 	public String getProname() {
@@ -150,15 +154,16 @@ public class ProductDto {
     }
 
     
-  
-   
+
+
+	
 
 	@Override
 	public String toString() {
-		return "ProductDto [proname=" + proname + ", product_id=" + product_id + ", category=" + category + ", price="
-				+ price + ", points=" + points + ", discount=" + discount + ", delivery_cost=" + delivery_cost
-				+ ", stock=" + stock + ", pro_img_list=" + pro_img_list + ", pro_img_inf=" + pro_img_inf
-				+ ", pro_img_desc=" + pro_img_desc + ", etc=" + etc + ", rdate=" + rdate + "]";
+		return "ProductDto [proname=" + proname + ", prodid=" + prodid + ", category=" + category + ", price=" + price
+				+ ", points=" + points + ", discount=" + discount + ", delivery_cost=" + delivery_cost + ", stock="
+				+ stock + ", pro_img_list=" + pro_img_list + ", pro_img_inf=" + pro_img_inf + ", pro_img_desc="
+				+ pro_img_desc + ", etc=" + etc + ", rdate=" + rdate + "]";
 	}
 
 	// 숫자 변환과 null 체크를 위한 메서드

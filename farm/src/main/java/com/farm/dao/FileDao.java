@@ -26,7 +26,7 @@ public class FileDao extends DBHelper {
         try {
         	conn = getConnection();
             psmt = conn.prepareStatement(SQL.INSERT_FILE);
-            psmt.setInt(1, dto.getProduct_id());
+            psmt.setInt(1, dto.getProdid());
             psmt.setString(2, dto.getoName());
             psmt.setString(3, dto.getsName());
             psmt.executeUpdate();

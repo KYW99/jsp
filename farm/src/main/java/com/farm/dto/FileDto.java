@@ -1,32 +1,26 @@
 package com.farm.dto;
 
-import java.util.List;
-
-
 public class FileDto {
 	
+	private int id;
+	private int prodid;
 	private int fno;
-	private int product_id;
 	private String oName;
 	private String sName;
 	private String rdate;
 	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 
-	private List<FileDto> files;
-	
-	
-	
-	public List<FileDto> getFiles() {
-		return files;
+	public int getProdid() {
+		return prodid;
 	}
-	public void setFiles(List<FileDto> files) {
-		this.files = files;
-	}
-	public int getProduct_id() {
-		return product_id;
-	}
-	public void setProduct_id(int product_id) {
-		this.product_id = product_id;
+	public void setProdid(int prodid) {
+		this.prodid = prodid;
 	}
 	public int getFno() {
 		return fno;
@@ -54,10 +48,16 @@ public class FileDto {
 	}
 	@Override
 	public String toString() {
-		return "FileDto [fno=" + fno + ", product_id=" + product_id + ", oName=" + oName + ", sName=" + sName
+		return "FileDto [id=" + id + ", prodid=" + prodid + ", fno=" + fno + ", oName=" + oName + ", sName=" + sName
 				+ ", rdate=" + rdate + "]";
 	}
 	
 
+	
+	
+
+	
+	
+	
 
 }

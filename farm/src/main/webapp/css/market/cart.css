@@ -1,0 +1,871 @@
+
+    * {
+            margin: 0;
+            padding: 0;
+            font: normal 12px '고딕';
+        }
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: #111;}
+        input, textarea {outline: none;}
+        
+        #wrapper {
+        position: relative;
+        width: 1920px;
+        height: 1199px;
+                
+        background: #FFFFFF;
+
+        margin: 0 auto;
+
+        }
+
+        .subtopbg1{
+            position: absolute;
+            width: 980px;
+            height: 184px;
+            left: 470px;
+            right: 470px;
+            top: 145px;
+
+            background: url(.jpg);
+
+
+        }
+        .subtopbg1 .subtoptit1{
+            position: absolute;
+            width: 326px;
+            height: 37px;
+            left: 10px;
+            bottom: 10px;
+                    
+            background: url(.png);
+
+        }
+
+
+        main {
+            position: absolute;
+            width: 980px;
+            height: 743px;
+            left: 470px;
+            right: 470px;
+            top: 326px;
+        }
+        main > aside{
+            position: absolute;
+            width: 176px;
+            height: 650px;
+            left: 0px;
+            top: 0px;
+
+            background: url(.png);
+
+        }
+
+        main > #asidesize{
+            position: absolute;
+            width: 176px;
+            height: 650px;
+            left: 470px;
+            top: 340px;
+
+            background: url(.png);
+            
+        }
+        
+        .asidegate1{
+            position: absolute;
+            width: 129px;
+            height: 44px;
+            left: 16px;
+            top: 16px;
+
+            background: url(.png);
+
+
+        }
+
+        main #asidesize .asidebgline{
+            position: relative;
+            top: 37px;
+            float: right;
+            
+        }
+
+        .asidelnb{
+            position: absolute;
+            width: 175px;
+            height: 233px;
+            left: 0px;
+            top: 81px;
+
+            background: url('img/sub_aside_bg_lnb.png');
+
+        }
+
+        .asidelnb .lnb1{
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 26px;
+            bottom: 178px;
+
+            background: url(.png);
+
+
+        }
+        .asidelnb .lnb2{
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 61px;
+            bottom: 143px;
+
+            background: url(.png);
+
+
+        }
+        .asidelnb .lnb3{
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 96px;
+            bottom: 108px;
+
+            background: url(.png);
+
+        }
+
+
+        .hello{
+            position: absolute;
+            width: 802px;
+            height: 743px;
+            left: 176px;
+            top: 0px;
+        }
+
+        .hello > article > nav{
+            box-sizing: border-box;
+            position: absolute;
+            width: 762px;
+            height: 72px;
+            left: 40px;
+            right: 0px;
+            top: 0px;
+
+            border-bottom: 1px solid #C2C2C2;
+
+        }
+        .hello > article > nav .navtit1{
+            position: absolute;
+            width: 69px;
+            height: 24px;
+            left: 0px;
+            bottom: 5px;
+
+            background: url(.png);
+
+        }
+        .hello > article > nav .smallhello{
+            position: absolute;
+            height: 17px;
+            left: 75.21%;
+            right: 0%;
+            bottom: 5px;
+            white-space: nowrap;
+       
+        }
+       
+
+        .hello > article > nav .smallhello .smallhello2{
+            position: absolute;
+            height: 14px;
+            height: 14px;
+            left: 42px;
+            top: 1px;
+
+            font-family: Arial, Helvetica, sans-serif; /* 폰트 패밀리 */
+            font-style: normal; /* 폰트 스타일 */
+            font-weight: 400; /* 폰트 굵기 */
+            font-size: 12px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+
+            color: #8C8C8C;
+
+
+
+        }
+        .hello > article > nav .smallhello .smallhello2 > div{
+            position: relative;
+            right: 3px;
+            bottom: 2px;
+
+        }
+        .hello > article > nav .smallhello .smallhello2 .highlight{
+            position: relative;
+            bottom: 1.5px;
+            font-weight: bold;
+            color: #91BA15;
+            
+        }
+        .hello > article > div .boards{
+            position: absolute;
+            width: 247.22px;
+            height: 14px;
+            left: 40px;
+            top: 113px;
+                    
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+                    
+            color: #000000;
+                    
+
+        }
+        .hello > article > p {
+            position: absolute;
+            width: 95.2px;
+            height: 14px;
+            left: 40px;
+            top: 113px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+
+            color: #111111;
+            white-space: nowrap;
+
+
+        }
+      
+        
+        
+
+        .hello > article .cart > .carthead{
+            box-sizing: border-box;
+                    
+            position: absolute;
+            width: 762px;
+            height: 38px;
+            left: 0px;
+            top: calc(50% - 38px/2 - 146.5px);
+                    
+            border-bottom: 1px solid #EEEEEE;
+
+        }
+        .hello > article .cart > .cartbody{
+            position: absolute;
+            width: 762px;
+            height: 293px;
+            left: 0px;
+            top: calc(50% - 293px/2 + 19px);
+            
+        }
+
+        .hello > article .cart > .carthead > li:nth-child(1){
+            box-sizing: border-box;
+
+            position: absolute;
+            width: 76.19px;
+            height: 38px;
+            left: 0px;
+            top: calc(50% - 38px/2);
+
+            background: #E5ECEF;
+            border-bottom: 1px solid #D1DEE2;
+
+        }
+        table{
+        box-sizing: border-box;
+
+            position: absolute;
+            width: 762px;
+            height : 133px;
+            left: 40px;
+            right: 0px;
+            top: 139px;
+
+            border-width: 1px 0px 0px 0px;
+            border-style: solid;
+            border-color: #111111;
+            border-collapse: collapse;
+            overflow: hidden;
+        
+        }
+        
+
+        
+        
+        tr:nth-child(1){
+        
+			position : relative;
+      		width: 762px;
+        	height: 38px
+        }
+        
+        th{
+       		 box-sizing: border-box;
+       		 background: #E5ECEF;
+            border-bottom: 1px solid #D1DEE2;
+            height : 37px;
+            line-height: 38px
+            
+        }
+        
+        th:nth-child(1){ 
+
+            position: absolute;
+            width: 76.19px;
+            left: 0px;
+
+
+		}
+        th:nth-child(2){ 
+
+            position: absolute;
+            width: 80px;
+            left: 76.19px;
+
+
+		}
+		 th:nth-child(3){ 
+
+            position: absolute;
+            width: 76.19px;
+            left: 156.19px;
+
+
+		}
+		 th:nth-child(4){ 
+
+            position: absolute;
+            width: 148.69px;
+            left: 232.38px;
+
+		}
+		 th:nth-child(5){ 
+
+            position: absolute;
+            width: 76.19px;
+            left: 381.08px;
+
+		}
+		 th:nth-child(6){ 
+
+            position: absolute;
+            width: 76.19px;
+            left: 457.25px;
+
+		}
+		 th:nth-child(7){ 
+
+            position: absolute;
+            width: 76.19px;
+			left: 533.44px;
+
+		}
+		 th:nth-child(8){ 
+
+            position: absolute;
+            width: 76.19px;
+   			left: 609.63px;
+            
+
+		}
+		 th:nth-child(9){ 
+
+            position: absolute;
+            width: 76.19px;
+			left: 685.81px;
+            
+
+		}
+        
+
+        
+
+        
+        table .cartproduct{
+       		box-sizing: border-box;
+        	position: relative;
+        	width :762px;
+        	height: 89px;
+        	
+        }
+        
+         table .cartproduct > td:nth-child(1){
+         	width: 76.19px;
+         
+         }
+          table .cartproduct > td:nth-child(2){
+         	width: 80px;
+         
+         }
+          table .cartproduct > td:nth-child(3){
+         	width: 76.19px;
+         
+         }
+          table .cartproduct > td:nth-child(4){
+         	width: 148.69px;
+         
+         }
+           table .cartproduct > td:nth-child(5){
+         	width: 76.19px;
+         
+         }
+         table .cartproduct > td:nth-child(6){
+         	width: 76.19px;
+         
+         }
+         table .cartproduct > td:nth-child(7){
+         	width: 76.19px;
+         
+         }
+          table .cartproduct > td:nth-child(8){
+         	width: 76.19px;
+         
+         }
+          table .cartproduct > td:nth-child(9){
+         	width: 76.19px;
+         
+         }
+        
+         td {
+            border-bottom: 1px dotted;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        td > img {
+        	position:relative;
+            width: 60px;
+            height: 60px;
+        }
+        
+        
+
+      
+        main .button {
+             display: flex;
+             justify-content: flex-end;
+        }
+        
+        
+        .button button {
+         border: none;
+            cursor: pointer;
+        }
+
+
+        main .button .deleteselect{
+            position: absolute;
+            width: 60px;
+            height: 29px;
+            left: 40px;
+            top: 481px;
+
+            background: #960D1A;
+
+        } 
+        main .button .deleteselect > p{
+            position: absolute;
+            width: 48.2px;
+            height: 14px;
+            left: 6px;
+            top: 7px;
+                    
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: #960D1A;
+            color: #FFFFFF;
+
+
+        }
+
+        main .boarder{
+            box-sizing: border-box;
+            position: absolute;
+            height: 262px;
+            left: 62%;
+            right: 0%;
+            top: 481px;
+
+            border: 1px solid #D7D7D7;
+
+        }
+        main .boarder .table{
+            box-sizing: border-box;
+            position: absolute;
+            height: 201px;
+            left: 7px;
+            right: 7px;
+            top: 7px;
+
+            border-width: 1px 0px;
+            border-style: solid;
+            border-color: #111111;
+
+        }
+
+        main .boarder .table .allcount{
+            position: absolute;
+            width: 48.2px;
+            height: 14px;
+            left: 121.39px;
+            top: 7px;
+            
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+
+        }
+
+        main .boarder .table .bdquantity{
+            position: absolute;
+            width: 286.8px;
+            height: 26px;
+            left: 0px;
+            top: calc(50% - 26px/2 - 60px);
+
+
+        }
+        main .boarder .table .bdquantity .bdquantity1_1{
+            position: absolute;
+            width: 36.2px;
+            height: 26px;
+            left: 10px;
+            top: calc(50% - 26px/2);
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 26px;
+            /* identical to box height, or 217% */
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+
+        }
+        main .boarder .table .bdquantity .bdquantity1_2{
+            position: absolute;
+            width: 6.2px;
+            height: 14px;
+            left: 185.88px;
+            top: calc(50% - 14px/2 - 0.5px);
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+
+        }
+        main .boarder .table .bdprice{
+            position: absolute;
+            width: 286.8px;
+            height: 26px;
+            left: 0px;
+            top: calc(50% - 26px/2 - 32px);
+
+        }
+        main .boarder .table .bdprice .bdprice1_1{
+            position: absolute;
+            width: 48.2px;
+            height: 26px;
+            left: 10px;
+            top: calc(50% - 26px/2);
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 26px;
+            /* identical to box height, or 217% */
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+
+        }
+        main .boarder .table .bdprice .bdprice1_2{
+            position: absolute;
+            width: 33.2px;
+            height: 14px;
+            left: 185.88px;
+            top: calc(50% - 14px/2 - 0.5px);
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 10.3125px;
+            line-height: 12px;
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+
+        }
+        main .boarder .table .bddcprice{
+            position: absolute;
+            width: 286.8px;
+            height: 26px;
+            left: 0px;
+            top: calc(50% - 26px/2 - 4px);
+
+        }
+        main .boarder .table .bddcprice .bddcprice1_1{
+            position: absolute;
+            width: 48.2px;
+            height: 26px;
+            left: 10px;
+            top: calc(50% - 26px/2);
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 26px;
+            /* identical to box height, or 217% */
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+
+        }
+        main .boarder .table .bddcprice .bddcprice1_2{
+            position: absolute;
+            width: 45.2px;
+            height: 14px;
+            left: 185.88px;
+            top: calc(50% - 14px/2 - 0.5px);
+                    
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 10.5px;
+            line-height: 13px;
+            display: flex;
+            align-items: center;
+                    
+            color: #000000;
+                    
+                    
+        }
+        main .boarder .table .bddelfee{
+            position: absolute;
+            width: 286.8px;
+            height: 26px;
+            left: 0px;
+            top: calc(50% - 26px/2 + 24px);
+        }
+        main .boarder .table .bddelfee .bddelfee1_1{
+            position: absolute;
+            width: 36.2px;
+            height: 26px;
+            left: 10px;
+            top: calc(50% - 26px/2);
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 26px;
+            /* identical to box height, or 217% */
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+
+        }
+        main .boarder .table .bddelfee .bddelfee1_2{
+            position: absolute;
+            width: 45.2px;
+            height: 14px;
+            left: 185.88px;
+            top: calc(50% - 14px/2 - 0.5px);
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 10.5px;
+            line-height: 13px;
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+
+        }
+        main .boarder .table .bdpoint{
+            position: absolute;
+            width: 286.8px;
+            height: 26px;
+            left: 0px;
+            top: calc(50% - 26px/2 + 52px);
+
+        }
+        main .boarder .table .bdpoint .bdpoint1_1{
+            position: absolute;
+            width: 36.2px;
+            height: 26px;
+            left: 10px;
+            top: calc(50% - 26px/2);
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 26px;
+            /* identical to box height, or 217% */
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+
+        }
+        main .boarder .table .bdpoint .bdpoint1_2{
+            position: absolute;
+            width: 39.2px;
+            height: 14px;
+            left: 185.88px;
+            top: calc(50% - 14px/2 - 0.5px);
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 10.6875px;
+            line-height: 13px;
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+
+        }
+        main .boarder .table .bdallcount{
+            position: absolute;
+            width: 286.8px;
+            height: 26px;
+            left: 0px;
+            top: calc(50% - 26px/2 + 80px);
+
+        }
+        main .boarder .table .bdallcount .bdallcount1_1{
+            position: absolute;
+            width: 72.2px;
+            height: 26px;
+            left: 10px;
+            top: calc(50% - 26px/2);
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 26px;
+            /* identical to box height, or 217% */
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+
+
+        }
+        main .boarder .table .bdallcount .bdallcount1_2{
+            position: absolute;
+            width: 33.2px;
+            height: 14px;
+            left: 185.88px;
+            top: calc(50% - 14px/2 - 0.5px);
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 9.1875px;
+            line-height: 11px;
+            display: flex;
+            align-items: center;
+
+            color: #C20A0A;
+
+
+        }
+
+        .button2 button {
+         border: none;
+            cursor: pointer;
+        }
+
+
+        main .boarder .button2 .btnorder{
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            width: 290.8px;
+            height: 37px;
+            left: 7px;
+            right: 7px;
+            top: 218px;
+
+            background: #960D1A;
+
+        }
+
+        main .boarder .button2 .btnorder > p{
+            position: absolute;
+            width: 48.2px;
+            height: 14px;
+            left: calc(50% - 48.2px/2 + 0.09px);
+            top: 11px;
+                    
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: #960D1A;
+            color: #FFFFFF;
+        }

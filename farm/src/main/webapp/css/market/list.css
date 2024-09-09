@@ -28,6 +28,28 @@
             height: 10px;
             background-image: url('../img/head_top_line.png')
         }
+        .subtopbg1{
+            position: absolute;
+            width: 980px;
+            height: 184px;
+            left: 470px;
+            right: 470px;
+            top: 145px;
+
+            background: url(.jpg);
+
+
+        }
+        .subtopbg1 .subtoptit1{
+            position: absolute;
+            width: 326px;
+            height: 37px;
+            left: 10px;
+            bottom: 10px;
+                    
+            background: url(.png);
+
+        }
         
 
         /**********************/
@@ -82,11 +104,52 @@
         main {
             position: absolute;
             width: 980px;
-            height: 920.75px;
+            height: 743px;
             left: 470px;
             right: 470px;
             top: 326px;
-            border: 1px solid red;
+        }
+        main > aside{
+            position: absolute;
+            width: 176px;
+            height: 650px;
+            left: 0px;
+            top: 0px;
+
+            background: url(.png);
+
+        }
+
+        main > #asidesize{
+            position: absolute;
+            width: 176px;
+            height: 650px;
+            left: 470px;
+            top: 340px;
+
+            background: url(.png);
+            
+        }
+        
+        .asidegate1{
+            position: absolute;
+            width: 129px;
+            height: 44px;
+            left: 16px;
+            top: 16px;
+
+            background: url(.png);
+
+
+        }
+
+         main {
+            position: absolute;
+            width: 980px;
+            height: 743px;
+            left: 470px;
+            right: 470px;
+            top: 326px;
         }
         main > aside{
             position: absolute;
@@ -177,10 +240,9 @@
         .hello{
             position: absolute;
             width: 802px;
-            height: 758px;
+            height: 743px;
             left: 176px;
             top: 0px;
-
         }
 
         .hello > article > nav{
@@ -511,946 +573,131 @@
 
         }
         
-
-
-        .hello > article .cart .cartbody2{
-            box-sizing: border-box;
+table{
+        box-sizing: border-box;
 
             position: absolute;
             width: 762px;
-            height: 105px;
-            left: 0px;
-            top: calc(50% - 105px/2 - 210px);
+            height : 133px;
+            left: 40px;
+            right: 0px;
+            top: 139px;
 
-            border-bottom: 1px solid #EEEEEE;
-
+            border-width: 1px 0px 0px 0px;
+            border-style: solid;
+            border-color: #111111;
+            border-collapse: collapse;
+            overflow: hidden;
+        
         }
-
-        .hello > article .cart .cartbody2 >.image1{
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            left: 10px;
-            top: 10.5px;
-
-            background: url(.jpg);
-                    
-        }
-        .hello > article .cart .cartbody2 > .kind1{
-            position: absolute;
-            width: 24.2px;
-            height: 14px;
-            left: 126.09px;
-            top: calc(50% - 14px/2 - 0.5px);
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #777777;
-
-        }
-        .hello > article .cart .cartbody2 > .Productname1{
-            position: absolute;
-            width: 51.2px;
-            height: 14px;
-            left: 186.19px;
-            top: 45px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 11.0625px;
-            line-height: 13px;
-            /* identical to box height */
-            display: flex;
-            align-items: center;
-
-            color: #111111;
-
-
-        }
-
-        .hello > article .cart .cartbody2 > .discount1{
-            position: absolute;
-            width: 22.2px;
-            height: 14px;
-            left: 522.41px;
-            top: calc(50% - 14px/2 - 0.5px);
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 11.625px;
-            line-height: 14px;
-            /* identical to box height */
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #111111;
-
-        }
-        .hello > article .cart .cartbody2 > .point1{
-            position: absolute;
-            width: 24.89px;
-            height: 14px;
-            left: 612.5px;
-            top: calc(50% - 14px/2 - 0.5px);
-                    
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 9.75px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-                    
-            color: #111111;
-
-        }
-        .hello > article .cart .cartbody2 > .price1{
-            position: absolute;
-            height: 105px;
-            left: 88%;
-            right: 0%;
-            top: calc(50% - 105px/2);
-    
-        }
-
-        .hello > article .cart .cartbody2 > .price1 > div:nth-child(1){
-            position: absolute;
-            width: 39px;
-            height: 14px;
-            left: 11.22px;
-            top: 36.5px;
-
-        }
-        .hello > article .cart .cartbody2 > .price1 > div:nth-child(1) .price1_1{
-            position: absolute;
-            width: 39.2px;
-            height: 14px;
-            left: 0px;
-            top: 0px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 10.125px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #111111;
-
-        }
-        .hello > article .cart .cartbody2 > .price1 > div:nth-child(2){
-            position: absolute;
-            width: 40.5px;
-            height: 31px;
-            left: 39.72px;
-            top: 36.5px;
-        }
-        .hello > article .cart .cartbody2 > .price1 > div:nth-child(2) .price1_2{
-            position: absolute;
-            width: 27.2px;
-            height: 14px;
-            left: 13.5px;
-            top: 0px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 9.75px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            text-decoration-line: line-through;
-
-            color: #777777;
-
-        }
-        .hello > article .cart .cartbody2 > .price1 > div:nth-child(2) > p{
-            position: absolute;
-            width: 12.2px;
-            height: 14px;
-            left: 0px;
-            top: 17px;
-                    
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            text-decoration-line: line-through;
-                    
-            color: #777777;
-
-        }
-        .hello > article .cart .cartbody3{
-            box-sizing: border-box;
-
-            position: absolute;
-            width: 762px;
-            height: 105px;
-            left: 0px;
-            top: calc(50% - 105px/2 - 105px);
-
-            border-bottom: 1px solid #EEEEEE;
-
+ 			 tr:nth-child(1){
+        
+			position : relative;
+      		width: 762px;
+        	height: 38px
         }
         
-        .hello > article .cart .cartbody3 >.image2{
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            left: 10px;
-            top: 10.5px;
-
-            background: url(.jpg);
-                    
-        }
-        .hello > article .cart .cartbody3 > .kind2{
-            position: absolute;
-            width: 24.2px;
-            height: 14px;
-            left: 126.09px;
-            top: calc(50% - 14px/2 - 0.5px);
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #777777;
-
-        }
-        .hello > article .cart .cartbody3 > .Productname2{
-            position: absolute;
-            width: 87.2px;
-            height: 14px;
-            left: 186.19px;
-            top: 45px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-            white-space: nowrap;
-
-            color: #111111;
-
-        }
-
-        .hello > article .cart .cartbody3 > .discount2{
-            position: absolute;
-            width: 22.2px;
-            height: 14px;
-            left: 522.41px;
-            top: calc(50% - 14px/2 - 0.5px);
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 11.625px;
-            line-height: 14px;
-            /* identical to box height */
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #111111;
-                    
-        }
-        .hello > article .cart .cartbody3 > .point2{
-            position: absolute;
-            width: 24.89px;
-            height: 14px;
-            left: 612.5px;
-            top: calc(50% - 14px/2 - 0.5px);
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 9.75px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #111111;
-
-
-
-        }
-        .hello > article .cart .cartbody3 > .price2{
-
-            position: absolute;
-            height: 105px;
-            left: 88%;
-            right: 0%;
-            top: calc(50% - 105px/2);
- 
-        }
-
-
-        .hello > article .cart .cartbody3 > .price2 > div:nth-child(1){
-            position: absolute;
-            width: 39px;
-            height: 14px;
-            left: 11.22px;
-            top: 36.5px;
-
-        }
-        .hello > article .cart .cartbody3 > .price2 > div:nth-child(1) .price2_1{
-            position: absolute;
-            width: 39.2px;
-            height: 14px;
-            left: 0px;
-            top: 0px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 10.125px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #111111;
-
-        }
-        .hello > article .cart .cartbody3 > .price2 > div:nth-child(2){
-            position: absolute;
-            width: 40.5px;
-            height: 31px;
-            left: 39.72px;
-            top: 36.5px;
-        }
-        .hello > article .cart .cartbody3 > .price2 > div:nth-child(2) .price2_2{
-            position: absolute;
-            width: 27.2px;
-            height: 14px;
-            left: 13.5px;
-            top: 0px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 9.75px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            text-decoration-line: line-through;
-
-            color: #777777;
-
-
-        }
-        .hello > article .cart .cartbody3 > .price2 > div:nth-child(2) > p{
-
-            position: absolute;
-            width: 12.2px;
-            height: 14px;
-            left: 0px;
-            top: 17px;
-                    
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            text-decoration-line: line-through;
-                    
-            color: #777777;
-
-
-        }
-
-          .hello > article .cart .cartbody4{
-            box-sizing: border-box;
-
-            position: absolute;
-            width: 762px;
-            height: 105px;
-            left: 0px;
-            top: calc(50% - 105px/2);
-
-            border-bottom: 1px solid #EEEEEE;
-                  
+        th{
+       		 box-sizing: border-box;
+       		 background: #E5ECEF; 
+            border-bottom: 1px solid #D1DEE2;
+            height : 37px;
+            line-height: 38px
+            
         }
         
-
-        .hello > article .cart .cartbody4 >.image3{
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            left: 10px;
-            top: 10.5px;
-
-            background: url(.jpg);
-
-        }
-        .hello > article .cart .cartbody4 > .kind3{
-
-            position: absolute;
-            width: 24.2px;
-            height: 14px;
-            left: 126.09px;
-            top: calc(50% - 14px/2 - 0.5px);
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #777777;
-
-        }
-        .hello > article .cart .cartbody4 > .Productname3{
-            position: absolute;
-            width: 63.2px;
-            height: 14px;
-            left: 186.19px;
-            top: 45px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-
-            color: #111111;
-
-        }
-
-        .hello > article .cart .cartbody4 > .discount3{
-            position: absolute;
-            width: 22.2px;
-            height: 14px;
-            left: 522.41px;
-            top: calc(50% - 14px/2 - 0.5px);
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 11.625px;
-            line-height: 14px;
-            /* identical to box height */
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #111111;
-
-        }
-        .hello > article .cart .cartbody4 > .point3{
-            position: absolute;
-            width: 24.89px;
-            height: 14px;
-            left: 612.5px;
-            top: calc(50% - 14px/2 - 0.5px);
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 9.75px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #111111;
-
-        }
-        .hello > article .cart .cartbody4 > .price3{
-
-            position: absolute;
-            height: 105px;
-            left: 88%;
-            right: 0%;
-            top: calc(50% - 105px/2);
-     
-        }
-
-        .hello > article .cart .cartbody4 > .price3 > div:nth-child(1){
-
-            position: absolute;
-            width: 39px;
-            height: 14px;
-            left: 11.22px;
-            top: 36.5px;
-        }
-        .hello > article .cart .cartbody4 > .price3 > div:nth-child(1) .price3_1{
-            position: absolute;
-            width: 39.2px;
-            height: 14px;
-            left: 0px;
-            top: 0px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 10.125px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #111111;
-
-        }
-        .hello > article .cart .cartbody4 > .price3 > div:nth-child(2){
-            position: absolute;
-            width: 40.5px;
-            height: 31px;
-            left: 39.72px;
-            top: 36.5px;
-        }
-        .hello > article .cart .cartbody4 > .price3 > div:nth-child(2) .price3_2{
-
-            position: absolute;
-            width: 27.2px;
-            height: 14px;
-            left: 13.5px;
-            top: 0px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 9.75px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            text-decoration-line: line-through;
-
-            color: #777777;
-
-        }
-        .hello > article .cart .cartbody4 > .price3 > div:nth-child(2) > p{
-            position: absolute;
-            width: 12.2px;
-            height: 14px;
-            left: 0px;
-            top: 17px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            text-decoration-line: line-through;
-
-            color: #777777;
-
-        }
-
-        .hello > article .cart .cartbody5 {
-            box-sizing: border-box;
-
-            position: absolute;
-            width: 762px;
-            height: 105px;
-            left: 0px;
-            top: calc(50% - 105px/2 + 105px);
-
-            border-bottom: 1px solid #EEEEEE;
-
-        }
         
-        .hello > article .cart .cartbody5 >.image4{
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            left: 10px;
-            top: 10.5px;
-
-            background: url(.jpg);
-
-        }
-        .hello > article .cart .cartbody5 > .kind4{
+        th:nth-child(1){ 
 
             position: absolute;
-            width: 24.2px;
-            height: 14px;
-            left: 126.09px;
-            top: calc(50% - 14px/2 - 0.5px);
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #777777;
-
-        }
-        .hello > article .cart .cartbody5 > .Productname4{
-            position: absolute;
-            width: 63.2px;
-            height: 14px;
-            left: 186.19px;
-            top: 45px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-            white-space: nowrap;
-
-            color: #111111;
-
-        }
-
-        .hello > article .cart .cartbody5 > .discount4{
-            position: absolute;
-            width: 22.2px;
-            height: 14px;
-            left: 522.41px;
-            top: calc(50% - 14px/2 - 0.5px);
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 11.625px;
-            line-height: 14px;
-            /* identical to box height */
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #111111;
-
-        }
-        .hello > article .cart .cartbody5 > .point4{
-            position: absolute;
-            width: 24.89px;
-            height: 14px;
-            left: 612.5px;
-            top: calc(50% - 14px/2 - 0.5px);
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 9.75px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #111111;
-
-        }
-        .hello > article .cart .cartbody5 > .price4{
-
-            position: absolute;
-            height: 105px;
-            left: 88%;
-            right: 0%;
-            top: calc(50% - 105px/2);
-     
-        }
-
-        .hello > article .cart .cartbody5 > .price4 > div:nth-child(1){
-
-            position: absolute;
-            width: 39px;
-            height: 14px;
-            left: 11.22px;
-            top: 36.5px;
-        }
-        .hello > article .cart .cartbody5 > .price4 > div:nth-child(1) .price4_1{
-            position: absolute;
-            width: 39.2px;
-            height: 14px;
+            width: 100px;
             left: 0px;
-            top: 0px;
 
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 10.125px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
+
+		}
+        th:nth-child(2){ 
+
+            position: absolute;
+            width: 76.19px;
+            left: 100px;
+
+
+		}
+		 th:nth-child(3){ 
+
+            position: absolute;
+            width: 311.5px;
+           left: 176.19px;
+
+
+		}
+		 th:nth-child(4){ 
+
+            position: absolute;
+            width: 94.44px;
+            left: 487.69px;
+
+		}
+		 th:nth-child(5){ 
+
+            position: absolute;
+            width: 94.44px;
+            left: 579.13px;
+
+
+		}
+		 th:nth-child(6){ 
+
+            position: absolute;
+            width: 94.44px;
+            left: 670.56px;
+
+		 }
+		 table .cartproduct{
+       		box-sizing: border-box;
+        	position: relative;
+        	width :762px;
+        	height: 89px;
+        	
+        }
+         table .cartproduct > td:nth-child(1){
+         	width: 100px;
+         
+         }
+          table .cartproduct > td:nth-child(2){
+         	width: 76.19px;
+         
+         }
+          table .cartproduct > td:nth-child(3){
+         	  width: 311.5px;
+         
+         }
+          table .cartproduct > td:nth-child(4){
+         	width: 94.44px;
+         
+         }
+           table .cartproduct > td:nth-child(5){
+         	width: 94.44px;
+         
+         }
+         table .cartproduct > td:nth-child(6){
+         	width: 94.44px;
+         
+         }
+         td {
+            height: 89px;
+            border-bottom: 1px dotted;
+            font-weight: bold;
             text-align: center;
-
-            color: #111111;
-
         }
-        .hello > article .cart .cartbody5 > .price4 > div:nth-child(2){
-            position: absolute;
-            width: 40.5px;
-            height: 31px;
-            left: 39.72px;
-            top: 36.5px;
+        td > a{
+          font-weight: bold;
         }
-        .hello > article .cart .cartbody5 > .price4 > div:nth-child(2) .price4_2{
-
-            position: absolute;
-            width: 27.2px;
-            height: 14px;
-            left: 13.5px;
-            top: 0px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 9.75px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            text-decoration-line: line-through;
-
-            color: #777777;
-
+          td > a > img {
+            width: 60px;
+            height: 60px;
         }
-        .hello > article .cart .cartbody5 > .price4 > div:nth-child(2) > p{
-            position: absolute;
-            width: 12.2px;
-            height: 14px;
-            left: 0px;
-            top: 17px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            text-decoration-line: line-through;
-
-            color: #777777;
-
-        }
-        .hello > article .cart .cartbody6 {
-            box-sizing: border-box;
-
-            position: absolute;
-            width: 762px;
-            height: 105px;
-            left: 0px;
-            top: calc(50% - 105px/2 + 210px);
-
-            border-bottom: 1px solid #EEEEEE;
-
-        }
-        .hello > article .cart .cartbody6 >.image5{
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            left: 10px;
-            top: 10.5px;
-
-            background: url(.jpg);
-
-        }
-        .hello > article .cart .cartbody6 > .kind5{
-
-            position: absolute;
-            width: 24.2px;
-            height: 14px;
-            left: 126.09px;
-            top: calc(50% - 14px/2 - 0.5px);
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #777777;
-
-        }
-        .hello > article .cart .cartbody6 > .Productname5{
-            position: absolute;
-            width: 63.2px;
-            height: 14px;
-            left: 186.19px;
-            top: 45px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-            white-space: nowrap;
-
-            color: #111111;
-
-        }
-
-        .hello > article .cart .cartbody6 > .discount5{
-            position: absolute;
-            width: 22.2px;
-            height: 14px;
-            left: 522.41px;
-            top: calc(50% - 14px/2 - 0.5px);
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 11.625px;
-            line-height: 14px;
-            /* identical to box height */
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #111111;
-
-        }
-        .hello > article .cart .cartbody6 > .point5{
-            position: absolute;
-            width: 24.89px;
-            height: 14px;
-            left: 612.5px;
-            top: calc(50% - 14px/2 - 0.5px);
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 9.75px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #111111;
-
-        }
-        .hello > article .cart .cartbody6 > .price5{
-
-            position: absolute;
-            height: 105px;
-            left: 88%;
-            right: 0%;
-            top: calc(50% - 105px/2);
-     
-        }
-
-        .hello > article .cart .cartbody6 > .price5 > div:nth-child(1){
-
-            position: absolute;
-            width: 39px;
-            height: 14px;
-            left: 11.22px;
-            top: 36.5px;
-        }
-        .hello > article .cart .cartbody6 > .price5 > div:nth-child(1) .price5_1{
-            position: absolute;
-            width: 39.2px;
-            height: 14px;
-            left: 0px;
-            top: 0px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 10.125px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            color: #111111;
-
-        }
-        .hello > article .cart .cartbody6 > .price5 > div:nth-child(2){
-            position: absolute;
-            width: 40.5px;
-            height: 31px;
-            left: 39.72px;
-            top: 36.5px;
-        }
-        .hello > article .cart .cartbody6 > .price5 > div:nth-child(2) .price5_2{
-
-            position: absolute;
-            width: 27.2px;
-            height: 14px;
-            left: 13.5px;
-            top: 0px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 9.75px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            text-decoration-line: line-through;
-
-            color: #777777;
-
-        }
-        .hello > article .cart .cartbody6 > .price5 > div:nth-child(2) > p{
-            position: absolute;
-            width: 12.2px;
-            height: 14px;
-            left: 0px;
-            top: 17px;
-
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            text-decoration-line: line-through;
-
-            color: #777777;
-
-        }
+		 
         .hello > article .next{
             position: absolute;
             width: 101.76px;
@@ -1476,5 +723,20 @@
             color: #111111;
 
         }
-
+		.hello .page_box{
+			position : absolute;
+            width: 100%;
+            height: 35px;
+            top :700px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .hello .page_box span {
+            font-weight: bold;
+        }
+        .hello .page_box .underline{
+            border-bottom: 1px solid #111;
+        }
+        .hello .page_box::before{content: "<";}
+        .hello .page_box::after{content: ">";}
 
